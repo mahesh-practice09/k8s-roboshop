@@ -43,11 +43,11 @@ spec:
                 name: shipping
            resources:
               requests:
-               cpu: 100m
-               memory: "64Mi"
+               cpu: 200m
+               memory: "256Mi"
               limits:
-                cpu: 200m
-                memory: "128Mi"
+                cpu: 500m
+                memory: "512Mi"
            startupProbe: 
             httpGet:
                path: /health
@@ -57,6 +57,7 @@ spec:
            readinessProbe:
             tcpSocket:
               port: 8080
+            failureThreshold: 2
             initialDelaySeconds: 20
             periodSeconds: 5
            livenessProbe:
