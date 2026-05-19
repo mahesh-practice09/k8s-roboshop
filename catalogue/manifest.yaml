@@ -7,7 +7,7 @@
     project: roboshop 
     tier: backend
     component: catalogue
-  data:
+ data:
     MONGO: "true"
     MONGO_URL : "mongodb://mongodb:27017/catalogue"
 ---
