@@ -37,5 +37,5 @@ spec:
       component: redis
   ports:
     - protocol: TCP 
-      port: 27017  # Service Port
-      targetPort: 27017 # Container Port
+      port: 6379  # Service Port
+      targetPort: 6379 # Container Port
