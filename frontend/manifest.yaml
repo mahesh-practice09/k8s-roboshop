@@ -28,9 +28,6 @@ spec:
          - name: frontend
            image: mahesh050917/frontend:1.4.0
            imagePullPolicy: Always
-           envFrom: 
-            - configMapRef:
-                name: frontend
            resources:
               requests:
                cpu: 100m
