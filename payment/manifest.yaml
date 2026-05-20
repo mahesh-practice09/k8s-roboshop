@@ -3,6 +3,7 @@
  kind: ConfigMap
  metadata: 
   name: payment
+  namespace: roboshop
   labels:
     project: roboshop 
     tier: backend
