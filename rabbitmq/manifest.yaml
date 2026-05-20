@@ -3,6 +3,7 @@
  kind: ConfigMap
  metadata: 
   name: rabbitmq
+  namespace: roboshop
   labels:
     project: roboshop 
     tier: backend
