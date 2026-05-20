@@ -8,7 +8,7 @@
     tier: frontend
     component: frontend
  data:
-   nginx.conf:   | 
+   nginx.conf: | 
         user nginx;
         worker_processes auto;
         error_log /var/log/nginx/error.log notice;
@@ -99,13 +99,13 @@ spec:
         spec:
           volumes:
             - name: nginx-config
-              config-map: 
+              configMap: 
                 name: frontend
           containers:
             - name: frontend
               image: mahesh050917/frontend:1.4.0
               imagePullPolicy: Always
-              volumemounts:
+              volumeMounts:
                 - name: nginx-config
                   mountPath: "/etc/nginx/nginx.conf"
                   subPath: nginx.conf
