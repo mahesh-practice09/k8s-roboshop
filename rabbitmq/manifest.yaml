@@ -6,7 +6,7 @@
   namespace: roboshop
   labels:
     project: roboshop 
-    tier: backend
+    tier: db
     component: rabbitmq
  data:
    RABBITMQ_DEFAULT_USER: "roboshop"
